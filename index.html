@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="center">
+    <h1>Digital Services</h1>
+
+    <h2>Log in</h2>
+    <!--Error message-->
+    <div id="error" type="error"></div>
+
+    <!--Action go current url and set default method="GET"-->
+    <!--Insert id in form so that can select-->
+    <form id="form" action="/" method="GET">
+        <div class="text_field">
+            <label for="name">Username</label>
+            <!--E4. Use js to check name required, if click submit fill out this field will display by browser-->
+            <!--<input id="name" name="name" type="text" required> means "Please enter your Sg Digital Services Password."-->
+            <input id="name" name="name" type="text">
+        </div> 
+        <div class="text_field">
+            <label for="name">Password</label>
+            <input id="password" name="password" type="password">
+        </div>
+        <div class="forgot_password">Forgot Password?</div>
+        <div class="register_now">Register now</div>
+        <button type="submit">Log in</button>
+    
+    </form>
+</div>
+    
+</body>
+</html>
