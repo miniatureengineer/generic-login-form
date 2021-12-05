@@ -27,12 +27,12 @@ form.addEventListener("submit", (e) => {
     }
     
     // Check password with different requirement
-    if ((name.value.length < 8) || (password.value.length < 8)) { 
+    if ((name.value.length < 8) || (password.value.length < 8)){ 
         // Add validations
         //If do not pass in any name, error message will prompt
-        messages.push("Password must be between 8 to 12 characters.")
+        messages.push("Username and Password must be between 8 to 12 characters.")
     }
-    
+
     // Check some form of error that prevent actual form from submitting
     if (messages.length > 0) {
            // Prevent page from submitting
