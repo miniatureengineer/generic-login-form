@@ -25,18 +25,14 @@ form.addEventListener("submit", (e) => {
     //If do not pass in any name, error message will prompt
     messages.push("Please enter your Digital Services Password.")
     }
-
+    
+    // Check password with different requirement
     if ((name.value.length < 8) || (password.value.length < 8)) { 
         // Add validations
         //If do not pass in any name, error message will prompt
         messages.push("Password must be between 8 to 12 characters.")
     }
-
-    // Check password with different requirement
-    //if (password.value.length <= 6) {
-        //messages.push("Password must be between 8 to 12 characters.")
-    //}
-
+    
     // Check some form of error that prevent actual form from submitting
     if (messages.length > 0) {
            // Prevent page from submitting
